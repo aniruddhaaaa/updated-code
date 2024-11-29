@@ -3,6 +3,7 @@ import Web3Modal from "web3modal";
 import { ethers } from "ethers";
 import axios from "axios";
 import { useRouter } from "next/router";
+// require('dotenv').config();
 
 //INTERNAL IMPORT
 import {
@@ -28,6 +29,9 @@ export const VotingProvider = ({ children }) => {
 
   const [error, setError] = useState("");
   const higestVote = [];
+
+  // const pinataApiKey = process.env.PINATA_API_KEY;
+  // const pinataSecretApiKey = process.env.PINATA_SECRET_API_KEY;
 
   const pushVoter = [];
   const [voterArray, setVoterArray] = useState();
